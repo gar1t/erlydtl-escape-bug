@@ -16,7 +16,7 @@ from_binary() ->
 
 from_file() ->
     erlydtl:compile("./templates/test.html", test_from_file, ?OPTS),
-    Rendered = test_from_binary:render([]),
+    Rendered = test_from_file:render([]),
     io:format("From file:   ~p~n", [Rendered]).
 
 from_dir() ->
